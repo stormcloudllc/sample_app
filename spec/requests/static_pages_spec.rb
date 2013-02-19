@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "StaticPages" do
 
-	let(:base_title) { "RoR Tut Sample App"}
+	let(:base_title) { "My Realm"}
 
 	subject { page }
 
@@ -14,7 +14,7 @@ describe "StaticPages" do
 	describe "Home page" do
 		before { visit root_path }
 
-		let(:heading)		{ 'Sample App' }
+		let(:heading)		{ 'Beautiful Person' }
 		let(:page_title)	{ '' }
 
 		it_should_behave_like "all static pages"
